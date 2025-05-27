@@ -1,0 +1,32 @@
+{
+      "sections": {
+          "video-header": {
+                "type": "video-header",
+                      "settings": {}
+                          },
+                              "bestsellers": {
+                                    "type": "bestsellers",
+                                          "settings": {}
+                                              },
+                                                  "about": {
+                                                        "type": "about",
+                                                              "settings": {}
+                                                                  },
+                                                                      "newsletter": {
+                                                                            "type": "newsletter",
+                                                                                  "settings": {}
+                                                                                      },
+                                                                                          "footer": {
+                                                                                                "type": "footer",
+                                                                                                      "settings": {}
+                                                                                                          }
+                                                                                                            },
+                                                                                                              "order": [
+                                                                                                                  "video-header",
+                                                                                                                      "bestsellers",
+                                                                                                                          "about",
+                                                                                                                              "newsletter",
+                                                                                                                                  "footer"
+                                                                                                                                    ]
+                                                                                                                                    }m
+}

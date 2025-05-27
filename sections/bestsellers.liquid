@@ -1,0 +1,61 @@
+<section class="bestsellers">
+  <h2 class="section-title">Bestseller</h2>
+    <div class="product-grid">
+        {% for product in collections['bestseller'].products %}
+              <div class="product-card">
+                      <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+                              <h3>{{ product.title }}</h3>
+                                      <p>{{ product.description | truncatewords: 10 }}</p>
+                                              <p class="price">{{ product.price | money }}</p>
+                                                    </div>
+                                                        {% else %}
+                                                              <p>Keine Produkte gefunden. Bitte weise der Kollektion "bestseller" Produkte zu.</p>
+                                                                  {% endfor %}
+                                                                    </div>
+                                                                    </section>
+
+                                                                    <style>
+                                                                    .bestsellers {
+                                                                        padding: 3rem 1rem;
+                                                                          background-color: #111;
+                                                                            color: #f5f5f5;
+                                                                    }
+
+                                                                    .section-title {
+                                                                        font-size: 2rem;
+                                                                          color: #FFD700;
+                                                                            text-align: center;
+                                                                              margin-bottom: 2rem;
+                                                                    }
+
+                                                                    .product-grid {
+                                                                        display: grid;
+                                                                          grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                                                                            gap: 2rem;
+                                                                    }
+
+                                                                    .product-card {
+                                                                        background: #1a1a1a;
+                                                                          padding: 1rem;
+                                                                            border-radius: 8px;
+                                                                              text-align: center;
+                                                                                border: 1px solid #333;
+                                                                    }
+
+                                                                    .product-card img {
+                                                                        max-width: 100%;
+                                                                          height: auto;
+                                                                            margin-bottom: 1rem;
+                                                                    }
+
+                                                                    .price {
+                                                                        color: #FFD700;
+                                                                          font-weight: bold;
+                                                                    }
+                                                                    </style>
+                                                                    }
+                                                                    }
+                                                                    }
+                                                                    }
+                                                                    }
+                                                                    }
